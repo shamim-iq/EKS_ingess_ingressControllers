@@ -1,4 +1,4 @@
-#Project: Game-2048
+# Project: Game-2048
 ## Motive
 
 This project will guide you through setting up an AWS EKS cluster powered by Fargate and the AWS Load Balancer Controller, perfect for your applications. You'll also discover the vital roles of ingress resources and ingress controllers, unlocking new levels of scalability and flexibility for your cloud-native deployments!
@@ -40,7 +40,7 @@ eksctl create fargateprofile \
   --namespace game-2048
 ```
 
-###Deploy the Sample Application
+### Deploy the Sample Application
 
 Apply the Game-2048 application configuration:
 ```bash
@@ -52,7 +52,7 @@ Check the availability of the pods:
 kubectl get pods -n game-2048
 ```
 
-###Set Up IAM OIDC Provider
+### Set Up IAM OIDC Provider
 
 Run the following commands to set up the IAM OIDC provider:
 ```bash
@@ -63,7 +63,7 @@ echo $oidc_id
 eksctl utils associate-iam-oidc-provider --cluster $cluster_name --approve
 ```
 
-###Create IAM Policy
+### Create IAM Policy
 
 Download the IAM policy and create it:
 ```bash
@@ -76,7 +76,7 @@ eksctl create iamserviceaccount \
   --approve
 ```
 
-###Install AWS Load Balancer Controller
+### Install AWS Load Balancer Controller
 
 Add the Helm repository and install the Load Balancer Controller:
 ```bash
@@ -91,7 +91,7 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller -n ku
   --set vpcId=<your-vpc-id>
 ```
 
-###Check Deployments and Ingress
+### Check Deployments and Ingress
 
 Verify the installation:
 ```bash
@@ -99,8 +99,10 @@ kubectl get deployment -n kube-system aws-load-balancer-controller
 kubectl get ing -n game-2048
 ```
 
-###Accessing Your Application
+### Accessing Your Application
+
 After completing the above steps, copy the Load Balancer (LB) address and access your application via your favorite web browser!
 
-###Cluster Cleanup
+### Cluster Cleanup
+
 Once you are done with the project, it is important to delete the EKS cluster to avoid unnecessary charges on your AWS account.
