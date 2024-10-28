@@ -7,9 +7,9 @@ This project will guide you through setting up an AWS EKS cluster powered by Far
 
 Before you begin, ensure you have the following tools installed:
 
-- [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
-- [eksctl](https://eksctl.io/introduction/#installation)
-- [AWS CLI](https://aws.amazon.com/cli/)
+- [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+- [eksctl](https://eksctl.io/installation/)
+- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 - [Helm](https://helm.sh/docs/intro/install/)
 
 ## Getting Started
