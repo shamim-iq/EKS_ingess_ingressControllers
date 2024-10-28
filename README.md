@@ -3,6 +3,11 @@
 
 This project will guide you through setting up an AWS EKS cluster powered by Fargate and the AWS Load Balancer Controller, perfect for your applications. You'll also discover the vital roles of ingress resources and ingress controllers, unlocking new levels of scalability and flexibility for your cloud-native deployments!
 
+![Diagram](./diagram.JPG)
+
+![Game-2048](./game-2048.JPG)
+
+
 ## Requirements
 
 Before you begin, ensure you have the following tools installed:
