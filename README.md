@@ -5,7 +5,7 @@ This project will guide you through setting up an AWS EKS cluster powered by Far
 
 ![Diagram](./diagram.JPG)
 
-![Game-2048](./game-2048-play.JPG)
+![Game-2048](./game-2028-play.JPG)
 
 ## Requirements
 
